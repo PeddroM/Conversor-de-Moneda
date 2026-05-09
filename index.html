@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Moneda</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/808ac7b3e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="conversor">
+
+        <h1>Conversor de Moneda</h1>
+
+        <input type="number" id="cantidad" min="0" placeholder="Ingresa cantidad">
+
+        <select id="moneda">
+
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+            <option value="uf">UF</option>
+        </select>
+
+        <button id="btn-convertir">Convertir</button>
+
+        <p>Resultado <span id="resultado-final">0</span></p>
+
+        <div class="borrar"><i class="fa-solid fa-x"></i></div>
+       
+    </section>
+
+    <section class="grafica">
+
+        <h3>Historial de variaciones</h3>
+        <p>Visualización de los últimos 10 días según la moneda seleccionada</p>
+
+        <canvas id="myChart"></canvas>
+      
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
